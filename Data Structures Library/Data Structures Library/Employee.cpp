@@ -1,5 +1,18 @@
 #include "Employee.h"
 
+Employee::Employee()
+{
+	name = "";
+	waitTime = 0;
+	retainTime = 0;
+}
+Employee::Employee(string userName)
+{
+	name = userName;
+	waitTime = 0;
+	retainTime = 0;
+}
+
 void Employee::setName(string userName)
 {
 	name = userName;
