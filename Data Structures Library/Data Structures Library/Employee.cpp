@@ -3,14 +3,12 @@
 Employee::Employee()
 {
 	name = "";
-	waitTime = 0;
-	retainTime = 0;
 }
-Employee::Employee(string userName)
+Employee::Employee(string userName, int newWait, int newRetain)
 {
 	name = userName;
-	waitTime = 0;
-	retainTime = 0;
+	waitTime = newWait;
+	retainTime = newRetain;
 }
 
 void Employee::setName(string userName)

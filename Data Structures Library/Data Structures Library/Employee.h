@@ -7,18 +7,18 @@ class Employee
 {
 	private:
 		string name;
-		int waitTime;
-		int retainTime;
+		int waitTime = 0;
+		int retainTime = 0;
 
 	public:
 		Employee();
-		Employee(string userName);
+		Employee(string empName, int waitTime = 0, int retainTime = 0);
 
-		void setName(string userName);
+		void setName(string userName); //setters
 		void setWait(int userWait);
 		void setRetain(int userRetain);
 
-		string getName();
+		string getName(); //getters
 		int getWait();
 		int getRetain();
 
