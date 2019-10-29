@@ -5,8 +5,6 @@
 
 using namespace std;
 
-
-
 class Book
 {
 	private:
@@ -17,6 +15,12 @@ class Book
 		bool archived;
 
 	public:
+		Book() {}
+		Book(string bookTitle)
+		{
+			title = bookTitle;
+		}
+
 		void setTitle(string newTitle); //setters
 		void setCircuStart(Date newCircuStart);
 		void setCircuEnd(Date newCircuEnd);

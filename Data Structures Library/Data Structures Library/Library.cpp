@@ -1,4 +1,5 @@
 #include "Library.h"
+#include "Book.h"
 
 void Library::circulateBook(string bookToCirc, Date dateOfCirc)
 {
@@ -10,7 +11,8 @@ void Library::circulateBook(string bookToCirc, Date dateOfCirc)
 
 void Library::add_book(string title)
 {
-	booksCirculating.push_back(title);
+	Book newBook(title);
+	booksCirculating.push_back(newBook);
 }
 
 void Library::pass_on(string bookToPass, Date dateOfPass)
@@ -20,7 +22,7 @@ void Library::pass_on(string bookToPass, Date dateOfPass)
 
 void Library::add_employee(string employeeName, int newWait, int newRetain)
 {
-	Employee* newEmp = new Employee(employeeName, newWait, newRetain);
+	Employee newEmp(employeeName, newWait, newRetain);
 	employeeRoster.push_back(newEmp);
 }
 

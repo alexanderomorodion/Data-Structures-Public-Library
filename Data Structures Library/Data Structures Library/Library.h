@@ -13,9 +13,9 @@ using namespace std;
 class Library
 {
 	private:
-		list<string> booksCirculating;
-		list<string> booksArchived;
-		vector<Employee*> employeeRoster; //full list of employees
+		list<Book> booksCirculating;
+		list<Book> booksArchived;
+		vector<Employee> employeeRoster; //full list of employees
 		
 	public:
 		void circulateBook(string bookToCirc, Date dateOfCirc);
