@@ -4,6 +4,7 @@ Employee::Employee()
 {
 	name = "";
 }
+
 Employee::Employee(string userName, int newWait, int newRetain)
 {
 	name = userName;

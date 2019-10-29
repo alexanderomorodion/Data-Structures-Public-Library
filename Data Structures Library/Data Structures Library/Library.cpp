@@ -2,43 +2,11 @@
 
 void Library::circulateBook(string bookToCirc, Date dateOfCirc)
 {
-	
+	sortEmps();
 
 }
 
-/*void Library::verifyQ()
-{
-	while (!employeePrioQ.empty())
-	{
-		cout << employeePrioQ.front()->getName() << endl;
-		employeePrioQ.pop();
-	}
-}*/
 
-void Library::sortEmps()
-{
-	
-	for (int i = employeeRoster.size() - 1; i > 0; i--)
-	{
-		for (int j = 0; j < i; j++)
-		{
-			int maxPrioLeft = employeeRoster[j]->getWait() - employeeRoster[j]->getRetain();
-			int maxPrioRight = employeeRoster[j + 1]->getWait() - employeeRoster[j + 1]->getRetain();
-
-			if (maxPrioLeft > maxPrioRight)
-			{
-				swap(employeeRoster[j], employeeRoster[j + 1]);
-			}
-
-		}
-		
-	}
-
-	for (int i = 0; i < employeeRoster.size(); i++)
-	{
-		employeePrioQ.push(employeeRoster[i]);
-	}
-}
 
 void Library::add_book(string title)
 {
