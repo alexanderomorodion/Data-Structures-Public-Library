@@ -6,20 +6,21 @@ using namespace std;
 class Employee
 {
 	private:
-		string name;
-		int waitTime = 0;
-		int retainTime = 0;
+		string name; //name of the employee
+		int waitTime = 0; //the amount of wait time
+		int retainTime = 0; //the amount of retain time
 
 	public:
 		Employee();
 		Employee(string empName, int waitTime = 0, int retainTime = 0);
 
-		void setName(string userName); //setters
+		//setters
+		void setName(string userName); 
 		void setWait(int userWait);
 		void setRetain(int userRetain);
 
-		string getName(); //getters
+		//getters
+		string getName(); 
 		int getWait();
 		int getRetain();
-
 };
