@@ -1,25 +1,35 @@
 #include "Book.h"
 
+//Sets the title of a passed book
+//Big O: O(1)
 void Book::setTitle(string newTitle)
 {
 	title = newTitle;
 }
 
+//Takes the input of a Date object and sets the start of the circulation to that date
+//Big O: O(1)
 void Book::setCircuStart(Date newCircuStart)
 {
 	circuStart = newCircuStart;
 }
 
+//Takes the input of a Date object and sets the end of the circulation to that date
+//Big O: O(1)
 void Book::setCircuEnd(Date newCircuEnd)
 {
 	circuEnd = newCircuEnd;
 }
 
+//Takes in the bool isArchived and sets archived to that bool (either T or F)
+//Big O: O(1)
 void Book::setArchived(bool isArchived)
 {
 	archived = isArchived;
 }
 
+//Verifies the Q by looping through it and outputting the name of each item at the front, and then popping that item
+//Big O: O(n)
 void Book::verifyQ()
 {
 	while (!employeePrioQ.empty())
@@ -29,6 +39,8 @@ void Book::verifyQ()
 	}
 }
 
+//This function sorts the employees in order of wait time - retain time
+//Big O: O(n^2) 
 void Book::sortEmps()
 {
 
