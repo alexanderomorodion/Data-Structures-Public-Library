@@ -10,14 +10,21 @@ using namespace std;
 
 int main()
 {
+	//create an instance of the Library class
 	Library midContinent;
-	midContinent.add_employee("Alex", 6, 3);
-	midContinent.add_employee("Jyn", 6, 6);
+
+	//add employees to the codebase
+	midContinent.add_employee("Alex", 6, 3); 
 	midContinent.add_employee("Kayla", 10, 1);
+
+	//output the employees
 	//midContinent.output_employees();
+
+	//creates an instance of the Date class and puts the book "hi" and Date instance in circulation in the Library class
 	Date myDate;
 	midContinent.circulateBook("hi", myDate);
 
+	//verifies the Queue 
 	//midContinent.verifyQ();
 
 	system("PAUSE");
