@@ -14,6 +14,8 @@ class Employee
 		Employee();
 		Employee(string empName, int waitTime = 0, int retainTime = 0);
 
+		
+
 		//setters
 		void setName(string userName); 
 		void setWait(int userWait);
@@ -23,4 +25,6 @@ class Employee
 		string getName(); 
 		int getWait();
 		int getRetain();
+
+
 };

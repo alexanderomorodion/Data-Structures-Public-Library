@@ -6,15 +6,12 @@
 #include <vector>
 #include "Date.h"
 #include "Employee.h"
-#include "Book.h"
 
 using namespace std;
 
 class Library
 {
-	private:
-		list<Book> booksCirculating; //a list of the books circulating
-		list<Book> booksArchived; //a list of the books archived
+	protected:
 		vector<Employee> employeeRoster; //full list of employees
 		
 	public:
